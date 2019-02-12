@@ -1,0 +1,17 @@
+doctype
+html
+  head
+  body(style="height: 9999px")
+    h1 IE11のタッチデバイスでのバグ確認
+    ul
+      li
+        a aタグのみ
+      li
+        a(href="") href=""
+      li
+        a(href="#") href="#"
+      li
+        a(href="" onclick="alert(1)") href="", onclick
+      li
+        a(href="#" onclick="alert(1)") href="#", onclick
+    script(src="./js/main.js")
